@@ -1,5 +1,5 @@
 ﻿=== Resize at Upload ===
-Contributors: Daniel Mores, huiz
+Contributors: Daniel Mores
 Donate link: http://mores.cc/resize-at-upload-plus
 Tags: image, plugin, resize, upload
 Requires at least: 2.6
@@ -10,7 +10,7 @@ Automatically resize (i.e. scale down) images after uploading. Save disk space a
 
 == Description ==
 
-This plugin is basically just a little improvement of [Resize-At-Upload](http://dev.huiz.net/2008/10/04/plugin-resize-at-upload-english/ "Resize-At-Upload"), a fabulous plugin by A. Huizinga.
+This plugin is basically just a little improvement of [Resize-At-Upload](http://wordpress.org/extend/plugins/resize-at-upload/ "Resize-At-Upload"), a fabulous plugin by A. Huizinga.
 
 The plugin will automatically resize an image upon upload, depending on the maximum width and height that you define. Gone are the days when you, or your client, will ruin a site's layout by uploading a huge file with 25 megapixels.
 Be advised: there is no backup, no copy of the originally uploaded image.
