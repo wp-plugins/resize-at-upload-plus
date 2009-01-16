@@ -1,4 +1,4 @@
-﻿=== Resize at Upload ===
+﻿=== Resize at Upload Plus ===
 Contributors: Daniel Mores
 Donate link: http://mores.cc/resize-at-upload-plus
 Tags: image, plugin, resize, upload
