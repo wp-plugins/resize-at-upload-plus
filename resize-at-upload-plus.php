@@ -4,12 +4,15 @@ Plugin Name: Resize At Upload Plus
 Plugin URI: http://mores.cc/resize-at-upload-plus
 Description: Automatically resize (i.e. scale down) images after uploading. Save disk space and preserve your layout
 Author: Daniel Mores, A. Huizinga
-Version: 1.0
+Version: 1.1
 Author URI: http://mores.cc
 
 Copyright 2008 Daniel Mores, A. Huizinga
 
 **Version History:**
+
+31 Jan 2009		v1.1
+Used Anton's improved class.resize.php to make use of GD2, to get resampling of resized images. Quality upgrade that was made possible entirely because of Anton Huizinga.
 
 17 Jan 2009		v1.0
 My wife's birthday. I release this plugin. I managed to make it stay inside the maximum dimensions you specify.

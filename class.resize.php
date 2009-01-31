@@ -6,6 +6,7 @@
 * Will resize any JPG, GIF or PNG file.
 *
 * Written By Jacob Wyke - jacob@redvodkajelly.com - www.redvodkajelly.com
+* Edited by A. Huizinga 2009, 22 Jan: changed used of function imagecopyresized into imagecopyresampled
 *
 * LICENSE 
 * Feel free to use this as you wish, just give me credit where credits due and drop me an email telling me what your using it for so I can check out all the cool ways its been used.
@@ -195,7 +196,7 @@ class RVJ_ImageResize {
    *  
    */ 
 
-   function saveImage($numQuality = 85){
+   function saveImage($numQuality = 95){
       switch($this->arrResizedDetails['mime']){
          case "image/jpeg":
             imagejpeg($this->resResizedImage, $this->strResizedImagePath, $numQuality);
@@ -280,7 +281,11 @@ class RVJ_ImageResize {
          //update the image size details  
          $this->updateNewDetails();  
          //do the actual image resize  
-         imagecopyresized($this->resResizedImage, $this->resOriginalImage, 0, 0, 0, 0, $numWidth, $numHeight, $this->arrOriginalDetails[0], $this->arrOriginalDetails[1]); 
+         if (function_exists('imagecopyresampled')) {
+           imagecopyresampled($this->resResizedImage, $this->resOriginalImage, 0, 0, 0, 0, $numWidth, $numHeight, $this->arrOriginalDetails[0], $this->arrOriginalDetails[1]); 
+         } else {
+           imagecopyresized($this->resResizedImage, $this->resOriginalImage, 0, 0, 0, 0, $numWidth, $numHeight, $this->arrOriginalDetails[0], $this->arrOriginalDetails[1]); 
+         }
          //saves the image  
          $this->saveImage();  
       }  
