@@ -3,8 +3,8 @@ Contributors: mores
 Donate link: http://mores.cc/resize-at-upload-plus
 Tags: image, plugin, resize, upload
 Requires at least: 2.6
-Tested up to: 2.7
-Stable tag: 1.1
+Tested up to: 3.4
+Stable tag: 1.3
 
 Automatically resize (i.e. scale down) images after uploading. Save disk space and preserve your layout
 
@@ -35,6 +35,12 @@ The plugin uses a class originally from Jacob Wyke (www.redvodkajelly.com).
 There are none (for now).
 
 == Changelog ==
+
+September 23, 2012 - **Version 1.3**
+fixed issue with capabilities, thanks to Daniele in this post:
+http://wordpress.org/support/topic/plugin-resize-at-upload-plus-has_cap-was-called-with-a-deprecated-argument-patch
+I thought this plugin was dead but it's nice to see it still being used (or downloaded, at least) regularly.
+Donations are appreciated, so if you use this plugin, show your support.
 
 January 31, 2009 - **Version 1.1**
 
