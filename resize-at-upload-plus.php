@@ -4,12 +4,21 @@ Plugin Name: Resize At Upload Plus
 Plugin URI: http://mores.cc/resize-at-upload-plus
 Description: Automatically resize (i.e. scale down) images after uploading. Save disk space and preserve your layout
 Author: Daniel Mores, A. Huizinga
-Version: 1.1
+Version: 1.3
 Author URI: http://mores.cc
 
 Copyright 2008 Daniel Mores, A. Huizinga
 
 **Version History:**
+
+23 Sep 2012     v1.3
+fixed issue with capabilities, thanks to Daniele in this post:
+http://wordpress.org/support/topic/plugin-resize-at-upload-plus-has_cap-was-called-with-a-deprecated-argument-patch
+I thought this plugin was dead but it's nice to see it still being used (or downloaded, at least) regularly.
+Donations are appreciated, so if you use this plugin, show your support.
+
+???????????     v1.2
+I forgot what I did there. Maybe nothing and my counting is off.
 
 31 Jan 2009		v1.1
 Used Anton's improved class.resize.php to make use of GD2, to get resampling of resized images. Quality upgrade that was made possible entirely because of Anton Huizinga.
@@ -46,7 +55,7 @@ if (get_option('hz_resizeupload_resize_yesno') == 'yes') {
 /* add option page */
 function hz_uploadresize_options_page(){
   if(function_exists('add_options_page')){
-    add_options_page('Resize at Upload Plus','Resize at Upload Plus',8,'resize-upload-plus','hz_uploadresize_options');
+    add_options_page('Resize at Upload Plus','Resize at Upload Plus','administrator','resize-upload-plus','hz_uploadresize_options');
   } // if
 } // function
 
